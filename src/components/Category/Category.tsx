@@ -12,7 +12,7 @@ const Category: FC<Props> = (props) => {
     <ul>
       {list.map(videoData=>(
         <li key={videoData.id}>
-          <video src={videoData.src} controls></video>
+          <video src={videoData.src}></video>
         </li>
       ))}
     </ul>

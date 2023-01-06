@@ -1,0 +1,21 @@
+.tabs{
+  display:flex;
+  background-color: #fff;
+  height: 56px;
+  padding: 16px;
+  margin-top: 56px;
+  align-items: center;
+
+  li{
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    padding: 8px 16px;
+    list-style: none;
+    color:gray;
+    background-color: #ddd;
+    border-radius: 50px;
+  }
+}

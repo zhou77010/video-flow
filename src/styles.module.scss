@@ -12,8 +12,24 @@
     height: 4px;
     background-color: red;
   }
+  .header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(0);
+    transition: transform 250ms;
+
+    &.hidden{
+      transform: translateY(-56px);
+    }
+  }
   .banner{
   width: 100%;
+  }
+  .scrollView{
+    height: 100vh;
+    overflow: auto;
   }
   .footer{
     height: 56px;

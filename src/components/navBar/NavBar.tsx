@@ -1,9 +1,19 @@
+import { LeftOutlined } from "@ant-design/icons";
 import { FC } from "react";
+import styles from './styles.module.scss'
 
-const NavBar = () => {
+
+interface Props{
+  title:string
+}
+const NavBar:FC<Props> = (props) => {
+  const {title} = props
   return(
-    <nav>
-      NavBar
+    <nav className={styles.navBar}>
+      <span className={styles.icon}>
+        <LeftOutlined></LeftOutlined>
+      </span>
+      <span>{title}</span>
     </nav>
   )
 }
